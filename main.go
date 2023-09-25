@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-type Room struct {
+type Room struct { // aa
 	name    string
 	links   []*Room
 	isStart bool
