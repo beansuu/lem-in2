@@ -1,42 +1,32 @@
+package main
 
+// Edge represents an edge in the graph
+type Edge struct {
+	from, to, cost int
+}
 
+func dfs(graph map[int][]Edge, start int, n int) int {
+	count := 0
+	visited := make([]bool, n)
+	stack := make([]int, 0)
 
+	stack = append(stack, start)
+	visited[start] = true
 
+	for len(stack) > 0 {
+		node := stack[len(stack)-1]
+		stack = stack[:len(stack)-1]
+		count++
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		for _, edge := range graph[node] {
+			if !visited[edge.to] {
+				stack = append(stack, edge.to)
+				visited[edge.to] = true
+			}
+		}
+	}
+	return count
+}
 
 // package main
 
