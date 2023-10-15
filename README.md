@@ -1,6 +1,6 @@
 # Instructions for audit [here](https://github.com/01-edu/public/tree/master/subjects/lem-in/audit)
 
-# To test all audit questions with one command:
+- To test all audit questions with one command:
 
 ```bash tesh.sh```
 
