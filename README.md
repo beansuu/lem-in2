@@ -1,9 +1,11 @@
-Breakdown of the responsibilites for each file.
+# Instructions for audit [here](https://github.com/01-edu/public/tree/master/subjects/lem-in/audit)
 
-- main.go: The main function and any top-level functionality for the program.
-- antfarm.go: The antFarm struct and its methods.
-- ants.go: The ants struct and its methods.
-- input_parser.go:
-- pathsfinder.go:
-- utils.go: Helper functions related to pathfinding.
-- 
+# To test all audit questions with one command:
+
+```bash tesh.sh```
+
+Otherwise if you want to test your own examples
+
+```go run . examples/example00.txt```
+
+# @ spitko || mtalli
